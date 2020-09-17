@@ -9,11 +9,7 @@
       }"
     >
       <div class="container">
-        <a
-          class="navbar-brand"
-          href="/"
-          @click.prevent="$emit('scroll', 'home')"
-        >
+        <a class="navbar-brand" href="/" @click.prevent="$emit('scroll', 'home')">
           <Logo :nightMode="nightMode" />
         </a>
         <button
@@ -25,9 +21,9 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span style="color: gray; font-size: 23px;"
-            ><i class="fas fa-bars"></i
-          ></span>
+          <span style="color: gray; font-size: 23px;">
+            <i class="fas fa-bars"></i>
+          </span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -38,8 +34,7 @@
                 href="/about"
                 @click.prevent="$emit('scroll', 'about')"
                 :class="{ 'text-light': nightMode }"
-                >about</a
-              >
+              >about</a>
             </li>
             <li class="nav-item mx-2">
               <a
@@ -47,17 +42,15 @@
                 href="/skills"
                 @click.prevent="$emit('scroll', 'skills')"
                 :class="{ 'text-light': nightMode }"
-                >skills</a
-              >
+              >skills</a>
             </li>
-            <li class="nav-item mx-2 ">
+            <li class="nav-item mx-2">
               <a
                 class="nav-link"
                 href="/portfolio"
                 @click.prevent="$emit('scroll', 'portfolio')"
                 :class="{ 'text-light': nightMode }"
-                >portfolio</a
-              >
+              >portfolio</a>
             </li>
             <li class="nav-item mx-2">
               <a
@@ -65,9 +58,9 @@
                 href="/contact"
                 @click.prevent="$emit('scroll', 'contact')"
                 :class="{ 'text-light': nightMode }"
-                >contact</a
-              >
+              >contact</a>
             </li>
+            <!-- disable night mode button
             <li class="nav-item ml-2">
               <a
                 class="nav-link"
@@ -82,7 +75,7 @@
                   v-tooltip.bottom="nightMode ? 'Light Mode' : 'Night Mode'"
                 ></i
               ></a>
-            </li>
+            </li>-->
           </ul>
         </div>
       </div>

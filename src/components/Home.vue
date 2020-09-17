@@ -1,14 +1,6 @@
 <template>
-  <div
-    :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }"
-    class="pt-5 p-st"
-  >
-    <div
-      class="container"
-      data-aos="fade"
-      data-aos-once="true"
-      data-aos-duration="1000"
-    >
+  <div :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }" class="pt-5 p-st">
+    <div class="container" data-aos="fade" data-aos-once="true" data-aos-duration="1000">
       <div class="row align-items-center">
         <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center">
           <img :src="picture" />
@@ -17,14 +9,13 @@
           <span
             class="home-title"
             :class="{ pgray: !nightMode, 'text-light': nightMode }"
-            >hello there!</span
-          >
+          >hello there!</span>
           <div>
             <p v-html="description"></p>
           </div>
           <div class="text-center pb-4">
             <button
-              class="btn btn-outline-secondary mx-2 "
+              class="btn btn-outline-secondary mx-2"
               @click="open('linkedin')"
               v-tooltip.bottom="'LinkedIn'"
             >
@@ -54,13 +45,9 @@
 <script>
 import info from "../../info";
 
-import Wave from "./helpers/Wave";
-
 export default {
   name: "Home",
-  components: {
-    Wave,
-  },
+  components: {},
   props: {
     nightMode: {
       type: Boolean,

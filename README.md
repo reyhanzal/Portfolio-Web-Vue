@@ -20,10 +20,7 @@
 ## Table of Contents
 
 - [Installation](#installation)
-- [Features](#features)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [Connect](#connect)
 - [License](#license)
 
 ---

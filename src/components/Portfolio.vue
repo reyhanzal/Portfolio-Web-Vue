@@ -8,22 +8,13 @@
     }"
   >
     <div class="container">
-      <div
-        class="text-center"
-        data-aos="fade"
-        data-aos-once="true"
-        data-aos-duration="1000"
-      >
+      <div class="text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000">
         <span
           class="title text-center"
           :class="{ pgray: !nightMode, 'text-light': nightMode }"
-          >portfolio.</span
-        >
+        >Portfolio</span>
       </div>
-      <hr
-        width="50%"
-        :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
-      />
+      <hr width="50%" :class="{ pgray: !nightMode, 'bg-secondary': nightMode }" />
 
       <vue-tabs :activeTextColor="!nightMode ? '#535A5E' : '#dfdfdf'">
         <v-tab title="development">
@@ -49,64 +40,7 @@
               />
             </div>
           </div>
-          <!-- <div class="text-center py-3" v-if="showBtn !== 'show less'">
-            <button class="btn" @click.prevent="showMore">{{ showBtn }}</button>
-          </div> -->
         </v-tab>
-
-        <!--v-tab title="design">
-          <div class="row">
-            <div
-              v-for="(design, idx) in desgin_info"
-              :key="idx"
-              :class="{ 'mt-4': idx === 0 ? true : true }"
-              class="col-xl-6 col-bg-6 col-md-12 col-sm-12"
-              style="position: relative;"
-            >
-              <vueper-slides
-                :dragging-distance="50"
-                fixed-height="300px"
-                :bullets="false"
-                slide-content-outside="bottom"
-                style="position: aboslute"
-                  @click.prevent="showDesignModalFn(design)"
-
-              >
-                <vueper-slide
-                  v-for="(slide, i) in design.pictures"
-                  :key="i"
-                  :image="slide.img"
-                />
-              </vueper-slides>
-              <div
-                style="width: 100%; display: flex; justify-content: space-between"
-                class="mt-2"
-              >
-                <div>
-                  <div class="title2" style="font-weight: 500;">{{ design.title }}</div>
-                  <span
-                    class="badge mr-2 mb-2"
-                    v-for="tech in design.technologies"
-                    :key="tech"
-                    :class="{ 'bg-dark4': nightMode }"
-                    >{{ tech }}</span
-                  >
-                  •
-                  <span class="date ml-1">{{design.date}}</span>
-                </div>
-
-                <button
-                  style="height: 31px; margin-top: 5px;"
-                  class="btn-sm btn btn-outline-secondary no-outline"
-                  @click.prevent="showDesignModalFn(design)"
-                >
-                  read more
-                </button>
-              </div>
-            </div>
-          </div>
-          <br />
-        </v-tab-->
       </vue-tabs>
     </div>
     <transition name="modal">
@@ -134,13 +68,10 @@
 import Card from "./helpers/Card";
 import Modal from "./helpers/Modal";
 import DesignModal from "./helpers/DesignModal";
-import Carousel from "./helpers/Carousel";
 import info from "../../info";
 
 import { VueTabs, VTab } from "vue-nav-tabs";
 import "vue-nav-tabs/themes/vue-tabs.css";
-
-import { VueperSlides, VueperSlide } from "vueperslides";
 import "vueperslides/dist/vueperslides.css";
 
 export default {
@@ -150,8 +81,6 @@ export default {
     Modal,
     VueTabs,
     VTab,
-    VueperSlides,
-    VueperSlide,
     DesignModal,
   },
   props: {
@@ -291,56 +220,6 @@ export default {
   color: white;
 }
 
-/deep/ .vue-tabs .nav-tabs {
-  border: none;
-  font-size: 20px;
-  font-weight: 500;
-  display: flex;
-
-  justify-content: center;
-}
-
-/deep/ .vue-tabs .tabs__link {
-  color: #a0a0a0;
-}
-
-/deep/ .vue-tabs .nav-tabs > li.active > a {
-  background: transparent;
-  border: none;
-  transition: all 0.5s;
-  padding-right: 0;
-  padding-left: 0;
-  margin-right: 15px;
-  margin-left: 15px;
-}
-
-/deep/ .vue-tabs .nav-tabs > li > a:hover {
-  background: transparent;
-  color: #cbcbcb;
-  transition: all 0.5s;
-}
-
-/deep/ .vue-tabs .nav-tabs > li > a {
-  background: transparent;
-  border: none;
-  transition: all 0.5s;
-}
-
-/deep/ .vue-tabs .nav-tabs > li > a:after {
-  content: "";
-  width: 20%;
-  position: absolute;
-  bottom: 3px;
-  border-width: 0 0 2px;
-  border-style: solid;
-  transition: all 0.5s;
-}
-
-/deep/ .vue-tabs .nav-tabs > li.active > a:after {
-  width: 100%;
-  transition: all 0.5s;
-}
-
 .design-img {
   width: 100%;
   border-radius: 15px;
@@ -374,13 +253,6 @@ export default {
   opacity: 1;
 }
 
-/deep/.vueperslide {
-  border-radius: 10px !important;
-}
-/deep/.vueperslides__parallax-wrapper {
-  border-radius: 10px !important;
-}
-
 .btn {
   border-color: #669db3ff;
   color: #669db3ff;
@@ -396,11 +268,6 @@ export default {
   background-color: #669db3ff;
   border-color: #669db3ff;
   color: white;
-}
-/deep/ .vueperslides__arrow {
-  outline: none !important;
-  border: none;
-  color: grey;
 }
 
 .badge {

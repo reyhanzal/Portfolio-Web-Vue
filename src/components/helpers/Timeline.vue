@@ -10,9 +10,7 @@
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
             data-aos-duration="1000"
-          >
-            {{ data.title }}
-          </p>
+          >{{ data.title }}</p>
           <ul
             class="timeline m-0 pt-1"
             v-for="(e, idx) in data.data"
@@ -33,16 +31,13 @@
                   {{ e.gpa ? "(" + e.gpa + ")" : "" }}
                 </div>
                 <div class="px-2 date">{{ e.date }}</div>
-                <div class="px-2 pb-2 pt-2" style="text-align: justify;">
-                  {{ e.description }}
-                </div>
+                <div class="px-2 pb-2 pt-2" style="text-align: justify;">{{ e.description }}</div>
                 <span
                   class="mx-2 badge p-2 mb-2"
                   v-for="s in e.skills"
                   :key="s"
                   :class="{ 'bg-dark2': nightMode }"
-                  >{{ s }}</span
-                >
+                >{{ s }}</span>
                 <p class="m-2"></p>
               </div>
             </li>
@@ -119,7 +114,7 @@ ul.timeline > li:before {
   display: inline-block;
   position: absolute;
   border-radius: 50%;
-  border: 2px solid rgb(59, 235, 255);
+  border: 2px solid rgb(53, 122, 130);
   left: 20px;
   width: 20px;
   height: 20px;

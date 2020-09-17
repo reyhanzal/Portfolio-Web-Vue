@@ -121,7 +121,7 @@ let info = {
         "As an ETL Developer, I was handled data extraction, transform, and load from T24 to Insight Database.",
     },
     {
-      name: "S21+ Enhanced BO System",
+      name: "S21+ Enhanced Back Office",
       pictures: [
         {
           img: require("./src/assets/portfolio/s21/1.png"),
@@ -130,13 +130,13 @@ let info = {
           img: require("./src/assets/portfolio/s21/2.png"),
         },
       ],
-      technologies: ["VBA", "Microsoft Access 2010", "SQL"],
+      technologies: ["Microsoft Access 2010", "SQL Server", "VBA"],
       category: "Desktop App",
       github: "https://github.com/hrishikeshpaul/pos-tagger",
       date: "Oct, 2015 - Apr, 2019",
       visit: "http://www.micropiranti.com/BackOffice.aspx",
       description:
-        "This is a desktop application, uses to account all brokerage transaction. The application consists of Client KYC, Contract Booking, MKBD and etc.",
+        "This is a desktop application, used to account all brokerage transaction. The application consists of Client KYC, Contract Booking, MKBD and etc.",
     },
   ],
   portfolio_design: [

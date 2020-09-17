@@ -1,22 +1,13 @@
 <template>
   <div :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }" class="p-st">
     <div class="container py-4">
-      <div
-        class="text-center"
-        data-aos="fade"
-        data-aos-once="true"
-        data-aos-duration="1000"
-      >
+      <div class="text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000">
         <span
           class="title text-center"
           :class="{ pgray: !nightMode, 'text-light': nightMode }"
-          >skills.</span
-        >
+        >Skills</span>
       </div>
-      <hr
-        width="50%"
-        :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
-      />
+      <hr width="50%" :class="{ pgray: !nightMode, 'bg-secondary': nightMode }" />
       <br />
       <div class="row">
         <div
@@ -32,12 +23,11 @@
           data-aos-mirror="true"
           data-aos-once="true"
         >
-          <div class="bg-div"><i :class="skill.icon"></i></div>
+          <div class="bg-div">
+            <i :class="skill.icon"></i>
+          </div>
           <div class="title2 pt-2">{{ skill.title }}</div>
-          <hr
-            width="50%"
-            :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
-          />
+          <hr width="50%" :class="{ pgray: !nightMode, 'bg-secondary': nightMode }" />
           <span class="title3">{{ skill.info.join(", ") }}</span>
         </div>
       </div>

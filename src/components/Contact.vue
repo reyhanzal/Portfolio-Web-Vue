@@ -12,7 +12,7 @@
         <span
           class="title text-center"
           :class="{ pgray: !nightMode, 'text-light': nightMode }"
-        >contact.</span>
+        >Contact</span>
       </div>
       <hr width="50%" :class="{ pgray: !nightMode, 'bg-secondary': nightMode }" />
       <br />
@@ -140,6 +140,12 @@ export default {
 .title3 {
   font-size: 16px;
   font-weight: 400;
+}
+
+.fa {
+  color: rgb(212, 149, 97);
+  font-size: 40px;
+  transition: all 0.5s;
 }
 
 .pinput {

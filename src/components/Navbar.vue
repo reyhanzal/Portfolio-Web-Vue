@@ -3,9 +3,9 @@
     <nav
       class="navbar navbar-expand-lg navbar-light fixed-top p-st"
       :class="{
-        'bg-light': !nightMode,
+        'bg-light2': nightMode,
         'navbar-blur': navbarConfig.blur,
-        'bg-dark2': nightMode,
+        'bg-dark2': !nightMode,
       }"
     >
       <div class="container">
@@ -128,7 +128,7 @@ button:hover {
 }
 
 nav {
-  border-bottom: 1px solid rgba(160, 159, 159, 0.336);
+  border-bottom: 1px solid rgba(106, 32, 111, 0.336);
   position: fixed !important;
 }
 

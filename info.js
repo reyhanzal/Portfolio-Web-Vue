@@ -53,7 +53,7 @@ let info = {
     },
     {
       title: "web technologies",
-      info: ["HTML", "CSS", "Vue", "Node"],
+      info: ["HTML", "CSS", "SASS", "Vue.js", "Node.js"],
       icon: "fas fa-laptop-code",
     },
     {
@@ -62,9 +62,9 @@ let info = {
       icon: "fa fa-database",
     },
     {
-      title: "operating systems & tools",
-      info: ["Windows", "Ubuntu"],
-      icon: "fas fa-tools",
+      title: "microsoft stack",
+      info: ["Sharepoint, SSDT, SQL Server, Power BI"],
+      icon: "fa fa-tools",
     },
   ],
   portfolio: [{

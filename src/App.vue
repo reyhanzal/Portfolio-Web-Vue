@@ -1,6 +1,6 @@
 <template>
   <div id="app" :class="{ 'text-dark': !nightMode, 'text-light': nightMode }">
-    <Navbar @scroll="scrollTo" @nightMode="switchMode" :nightMode="nightMode" />
+    <Navbar @scroll="scrollTo" @nightMode="switchMode" :nightMode="!nightMode" />
     <div class="parent">
       <Home :nightMode="nightMode" />
       <About id="about" :nightMode="nightMode" />
@@ -107,6 +107,10 @@ export default {
   color: #669db3ff;
 }
 
+.bg-light2 {
+  background-color: #40525a !important;
+}
+
 .bg-dark2 {
   background-color: #262c30 !important;
 }
@@ -128,7 +132,7 @@ export default {
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 9px;
-  border: 2px solid white; /* Use your background color instead of White */
+  border: 2px solid white;
   background-clip: content-box;
 }
 

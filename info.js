@@ -102,7 +102,7 @@ let info = {
       category: "Database Administrator",
       date: "May, 2019 - Dec, 2019",
       github: "https://github.com/reyhanzal",
-      visit: "https://noq-client.herokuapp.com/",
+      visit: "https://github.com/reyhanzal",
       description: "As an ETL Developer, I was handled data extraction, transform, and load from T24 to Insight Database.",
     },
     {

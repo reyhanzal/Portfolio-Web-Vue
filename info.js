@@ -12,7 +12,7 @@ let info = {
   links: {
     linkedin: "https://www.linkedin.com/in/mreyhanzalbina/",
     github: "https://github.com/reyhanzal",
-    resume: "https://drive.google.com/file/u/1/d/1dyHdTWZeBfGlPSPorLSowTsq8twmmZd-/view?usp=sharing",
+    resume: "https://drive.google.com/file/d/1MwiUbX1jFQ-h22AGXqr13xNGTro25PDp/view?usp=sharing",
   },
   education: [{
     name: "Universitas Sriwijaya",
